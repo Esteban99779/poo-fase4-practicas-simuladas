@@ -9,3 +9,5 @@ git commit -m "feat: implementa excepciones personalizadas y validacion secuenci
 
 # 4. Sube tu rama a GitHub
 git push -u origin rama-excepciones-tu-nombre# poo-fase4-practicas-simuladas
+git checkout main
+git pull origin main
