@@ -11,3 +11,23 @@ git commit -m "feat: implementa excepciones personalizadas y validacion secuenci
 git push -u origin rama-excepciones-tu-nombre# poo-fase4-practicas-simuladas
 git checkout main
 git pull origin main
+"""
+Módulo de excepciones personalizadas para la Fase 4.
+Define errores específicos del dominio para controlar fallos de forma explícita.
+"""
+
+
+class ErrorReservaBase(Exception):
+    """Clase base para excepciones del sistema de reservas."""
+
+
+class EntradaInvalidaError(ErrorReservaBase):
+    """Se lanza cuando un dato de entrada es vacío, nulo o está fuera de rango."""
+
+
+class CapacidadInsuficienteError(ErrorReservaBase):
+    """Se lanza cuando se solicitan más cupos o unidades de los disponibles."""
+
+
+class OperacionNoPermitidaError(ErrorReservaBase):
+    """Se lanza cuando se intenta una acción inválida sobre el estado actual."""
